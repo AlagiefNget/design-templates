@@ -4,14 +4,7 @@ package com.afn.designpatterntemplates.factory;
  * Encapsulates object creation logic so the caller doesn't need to know the concrete class.
  * Use when: creating objects based on runtime conditions, decoupling creation from usage, abstracting complex construction.
  */
-public class Factory {
 
-    public static void main(String[] args) {
-        // Usage — caller doesn't care about the concrete class
-        Notification n = NotificationFactory.create("SMS");
-        n.send("Your order shipped!"); // [SMS] Your order shipped!
-    }
-}
 
 // Simple Factory
 interface Notification {
@@ -39,5 +32,14 @@ class NotificationFactory {
             case "PUSH"  -> new PushNotification();
             default      -> throw new IllegalArgumentException("Unknown channel: " + channel);
         };
+    }
+}
+
+public class Factory {
+
+    public static void main(String[] args) {
+        // Usage — caller doesn't care about the concrete class
+        Notification n = NotificationFactory.create("SMS");
+        n.send("Your order shipped!"); // [SMS] Your order shipped!
     }
 }
