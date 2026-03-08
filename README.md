@@ -669,4 +669,4 @@ BillingService withPayPal  = new BillingService(new PayPalAdapter(new PayPalClie
 | **Factory** | Runtime type selection | Decoupled object creation |
 | **Adapter** | Legacy/3rd-party integration | Interface compatibility |
 
-Given your microservices background with Shillo, FinSphere, and Kunneh, you're already applying many of these — especially DIP (injection), Factory (config-driven dispatching), Observer (Kafka consumers), and Adapter (wrapping Jira/Radar/Clarity APIs). Let me know if you'd like a deep dive on any of these in the context of one of your specific proje
+Given your microservices background with Shillo, FinSphere, and Kunneh, you're already applying many of these — especially DIP (injection), Factory (config-driven dispatching), Observer (Kafka consumers), and Adapter (wrapping Jira/Radar/Clarity APIs). Let me know if you'd like a deep dive on any of these in the context of one of your specific projects.
