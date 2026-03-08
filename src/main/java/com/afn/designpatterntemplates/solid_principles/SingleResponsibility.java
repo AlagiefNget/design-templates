@@ -6,6 +6,9 @@ package com.afn.designpatterntemplates.solid_principles;
  *
  * S — Single Responsibility Principle
  * One class = one reason to change.
+ *
+ * Why:
+ * When email logic changes, you shouldn't touch UserService. Keeps classes focused and testable.
  */
 
 class User {
